@@ -7,7 +7,7 @@ const app = express();
 
 // Configure CORS
 app.use(cors({
-    origin: 'http://localhost:3000', // Ensure this matches your frontend's URL
+    origin: 'https://medprice.vercel.app', // Ensure this matches your frontend's URL
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type']
 }));
