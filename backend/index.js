@@ -15,11 +15,6 @@ app.use(cors({
 // Middleware to parse JSON requests
 app.use(express.json());
 
-// Add a health check endpoint
-app.get('/api/health', (req, res) => {
-    res.json({ status: 'OK' });
-});
-
 const mockDrugs = [  
     {  
       id: 1,  
