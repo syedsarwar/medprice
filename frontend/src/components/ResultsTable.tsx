@@ -11,7 +11,7 @@ export default function ResultsTable({ searchTerm }: ResultsTableProps) {
   useEffect(() => {
     const fetchDrugs = async () => {
       try {
-        const response = await fetch(`https://medprice-api.onrender.com/api/drugs?search=${searchTerm}`);
+        const response = await fetch(`https://medprice.onrender.com/api/drugs?search=${searchTerm}`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
