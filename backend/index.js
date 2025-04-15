@@ -7,10 +7,10 @@ const app = express();
 
 // Configure CORS
 app.use(cors({
-    origin: 'https://medprice.vercel.app', // Ensure this matches your frontend's URL
-    methods: ['GET', 'POST'],
+    origin: 'https://medprice.vercel.app', // Allow Vercel frontend
+    methods: ['GET', 'POST'], // Allow necessary methods
     allowedHeaders: ['Content-Type']
-}));
+  }));
 
 // Middleware to parse JSON requests
 app.use(express.json());
